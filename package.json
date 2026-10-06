@@ -1,0 +1,17 @@
+{
+  "name": "sevenseg-wiring",
+  "version": "1.0.0",
+  "private": true,
+  "description": "七段数码管乱序接线推断与歧义解释后端",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js",
+    "test": "npm run build && node --test dist/test/core.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
